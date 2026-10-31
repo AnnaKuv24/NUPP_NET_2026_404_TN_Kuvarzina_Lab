@@ -4,12 +4,12 @@ using Xunit;
 
 namespace Hotel.Tests;
 
-public class CrudServiceAsyncTests
+public class InMemoryCrudServiceAsyncTests
 {
-    private static CrudServiceAsync<StandardRoom> CreateService()
+    private static InMemoryCrudServiceAsync<StandardRoom> CreateService()
     {
         var tempFile = Path.Combine(Path.GetTempPath(), $"test_rooms_{Guid.NewGuid()}.json");
-        return new CrudServiceAsync<StandardRoom>(tempFile);
+        return new InMemoryCrudServiceAsync<StandardRoom>(tempFile);
     }
 
     [Fact]
@@ -113,7 +113,7 @@ public class CrudServiceAsyncTests
         await service.CreateAsync(room);
 
         var saved = await service.SaveAsync();
-        var restoredService = new CrudServiceAsync<StandardRoom>(
+        var restoredService = new InMemoryCrudServiceAsync<StandardRoom>(
             GetPrivateFilePath(service));
         var loaded = await restoredService.LoadAsync();
         var restored = await restoredService.ReadAllAsync();
@@ -123,9 +123,9 @@ public class CrudServiceAsyncTests
         Assert.Single(restored);
     }
 
-    private static string GetPrivateFilePath(CrudServiceAsync<StandardRoom> service)
+    private static string GetPrivateFilePath(InMemoryCrudServiceAsync<StandardRoom> service)
     {
-        var field = typeof(CrudServiceAsync<StandardRoom>)
+        var field = typeof(InMemoryCrudServiceAsync<StandardRoom>)
             .GetField("_filePath", System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)!;
         return (string)field.GetValue(service)!;
     }
