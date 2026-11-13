@@ -1,3 +1,4 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
@@ -8,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Console", "Hotel.Cons
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Tests", "Hotel.Tests\Hotel.Tests.csproj", "{C208F214-B5BF-4033-9E96-1D859086D7EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Infrastructure", "Hotel.Infrastructure\Hotel.Infrastructure.csproj", "{07DF9B54-0677-458A-8203-8D1ECA877861}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Infrastructure", "Hotel.Infrastructure\Hotel.Infrastructure.csproj", "{07DF9B54-0677-458A-8203-8D1ECA877861}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hotel.Nosql", "Hotel.Nosql\Hotel.Nosql.csproj", "{51DFFF56-2C2D-4D1B-808F-06741A49BE48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.Nosql", "Hotel.Nosql\Hotel.Nosql.csproj", "{51DFFF56-2C2D-4D1B-808F-06741A49BE48}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.REST", "Hotel.REST\Hotel.REST.csproj", "{E4C0B280-8C37-46E1-AC7B-D4D8585C7F2B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hotel.MVC", "Hotel.MVC\Hotel.MVC.csproj", "{5863630C-A350-4A84-8DCB-5A4A45493386}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +43,14 @@ Global
 		{51DFFF56-2C2D-4D1B-808F-06741A49BE48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51DFFF56-2C2D-4D1B-808F-06741A49BE48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51DFFF56-2C2D-4D1B-808F-06741A49BE48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4C0B280-8C37-46E1-AC7B-D4D8585C7F2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C0B280-8C37-46E1-AC7B-D4D8585C7F2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C0B280-8C37-46E1-AC7B-D4D8585C7F2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C0B280-8C37-46E1-AC7B-D4D8585C7F2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5863630C-A350-4A84-8DCB-5A4A45493386}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5863630C-A350-4A84-8DCB-5A4A45493386}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5863630C-A350-4A84-8DCB-5A4A45493386}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5863630C-A350-4A84-8DCB-5A4A45493386}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
